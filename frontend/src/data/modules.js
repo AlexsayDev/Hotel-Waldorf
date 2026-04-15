@@ -2,7 +2,7 @@ import { Users, LayoutDashboard, BedDouble, Search, CalendarDays, CreditCard, Ta
 export const modules = [
     { key: 'dashboard', label: 'Dashboard', icon: LayoutDashboard, enabled: false },
     { key: 'usuarios', label: 'Usuarios', icon: Users, enabled: true },
-    { key: 'habitaciones', label: 'Habitaciones', icon: BedDouble, enabled: false },
+    { key: 'habitaciones', label: 'Habitaciones', icon: BedDouble, enabled: true },
     { key: 'disponibilidad', label: 'Disponibilidad', icon: Search, enabled: false },
     { key: 'reservas', label: 'Reservas', icon: CalendarDays, enabled: false },
     { key: 'pagos', label: 'Pagos', icon: CreditCard, enabled: false },

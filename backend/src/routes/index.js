@@ -2,6 +2,7 @@
 import express from 'express';
 import usuariosRoutes from './usuarios.routes.js';
 import authRoutes from './auth.routes.js'
+import habitacionesRoutes from './habitaciones.routes.js'
 
 //import { Router } from 'express';
 const router = express.Router();
@@ -15,5 +16,6 @@ router.get('/test', (req, res) => {
 
 router.use('/auth', authRoutes)
 router.use('/usuarios', usuariosRoutes);
+router.use('/habitaciones', habitacionesRoutes);
 
 export default router;
