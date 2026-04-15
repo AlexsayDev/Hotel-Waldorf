@@ -8,6 +8,7 @@ import UsersTable from '../components/users/UserTable';
 import PlaceholderModule from '../components/users/PlaceholderModule';
 import { modules } from '../data/modules.js';
 import HabitacionesModule from '../components/rooms/HabitacionesModule.jsx';
+import DisponibilidadModule from '../components/availability/DisponibilidadModule.jsx';
 
 import { obtenerUsuariosApi, crearUsuarioApi, actualizarUsuarioApi, cambiarEstadoUsuarioApi } from '../services/usuariosService.js';
 
@@ -252,6 +253,8 @@ const Usuarios = () => {
                         </>
                     ) : activeModule === 'habitaciones' ? (
                         <HabitacionesModule />
+                    ) : activeModule === 'disponibilidad' ? (
+                        <DisponibilidadModule />
                     ) : (
                         <PlaceholderModule
                             title={activeModuleConfig?.label || 'Módulo'}
