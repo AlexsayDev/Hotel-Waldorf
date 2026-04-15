@@ -1,8 +1,10 @@
 // RUTAS DEL SISTEMA (eje: /api/usuarios)
-import { Router } from 'express';
-const router = Router();
-
+import express from 'express';
 import usuariosRoutes from './usuarios.routes.js';
+import authRoutes from './auth.routes.js'
+
+//import { Router } from 'express';
+const router = express.Router();
 
 router.get('/test', (req, res) => {
     res.json({
@@ -11,6 +13,7 @@ router.get('/test', (req, res) => {
     });
 });
 
+router.use('/auth', authRoutes)
 router.use('/usuarios', usuariosRoutes);
 
 export default router;
