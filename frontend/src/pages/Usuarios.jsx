@@ -9,6 +9,7 @@ import PlaceholderModule from '../components/users/PlaceholderModule';
 import { modules } from '../data/modules.js';
 import HabitacionesModule from '../components/rooms/HabitacionesModule.jsx';
 import DisponibilidadModule from '../components/availability/DisponibilidadModule.jsx';
+import ReservasModule from '../components/reservations/ReservasModule.jsx';
 
 import { obtenerUsuariosApi, crearUsuarioApi, actualizarUsuarioApi, cambiarEstadoUsuarioApi } from '../services/usuariosService.js';
 
@@ -178,11 +179,7 @@ const Usuarios = () => {
                     <header className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
                         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
                             <div>
-                                <p className="text-sm font-medium text-slate-500">Módulo actual</p>
                                 <h2 className="mt-1 text-3xl font-bold">{activeLabel}</h2>
-                                <p className="mt-2 text-slate-500">
-                                    Base visual del sistema con navegación preparada para las siguientes fases del proyecto.
-                                </p>
                             </div>
 
                             <div className="rounded-2xl bg-slate-50 px-4 py-3 text-sm text-slate-600 ring-1 ring-slate-200">
@@ -237,7 +234,7 @@ const Usuarios = () => {
                                             </div>
                                             <div className="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
                                                 <ShieldCheck className="h-5 w-5 text-slate-700" />
-                                                <p className="mt-3 text-sm text-slate-500">Roles controlados para crecer a permisos por módulo.</p>
+                                                <p className="mt-3 text-sm text-slate-500">Roles controlados para su acceso al sistema.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -255,10 +252,12 @@ const Usuarios = () => {
                         <HabitacionesModule />
                     ) : activeModule === 'disponibilidad' ? (
                         <DisponibilidadModule />
+                    ) : activeModule === 'reservas' ? (
+                        <ReservasModule />
                     ) : (
                         <PlaceholderModule
                             title={activeModuleConfig?.label || 'Módulo'}
-                            description="Estructura visual preparada para las próximas fases del sistema de reservas del hotel."
+                            //description="Estructura visual preparada para las próximas fases del sistema de reservas del hotel."
                             icon={activeModuleConfig?.icon || LayoutDashboard}
                         />
                     )}

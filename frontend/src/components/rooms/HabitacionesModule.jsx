@@ -224,9 +224,6 @@ export default function HabitacionesModule() {
                 <div className="flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between">
                     <div>
                         <h2 className="text-xl font-semibold text-slate-900">Habitaciones</h2>
-                        <p className="mt-1 text-sm text-slate-500">
-                            Vista tarjeta con búsqueda y filtros para administrar el catálogo.
-                        </p>
                     </div>
 
                     <div className="flex flex-wrap gap-3">

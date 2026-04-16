@@ -10,7 +10,7 @@ const UserForm = ({ form, onChange, onSubmit, loading, editing, onCancel }) => {
                         {editing ? 'Editar usuario' : 'Nuevo usuario'}
                     </h2>
                     <p className="mt-1 text-sm text-slate-500">
-                        Registra usuarios internos del sistema como administrador o recepcionista.
+                        Registra usuarios internos del sistema y asignarle su rol.
                     </p>
                 </div>
                 {editing && (
@@ -32,7 +32,7 @@ const UserForm = ({ form, onChange, onSubmit, loading, editing, onCancel }) => {
                         value={form.nombre}
                         onChange={onChange}
                         className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-500"
-                        placeholder="Ej. Andrea"
+                        placeholder="Ej. William"
                     />
                 </div>
 
@@ -43,7 +43,7 @@ const UserForm = ({ form, onChange, onSubmit, loading, editing, onCancel }) => {
                         value={form.apellido}
                         onChange={onChange}
                         className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-500"
-                        placeholder="Ej. López"
+                        placeholder="Ej. Zavala"
                     />
                 </div>
 
@@ -55,7 +55,7 @@ const UserForm = ({ form, onChange, onSubmit, loading, editing, onCancel }) => {
                         value={form.correo}
                         onChange={onChange}
                         className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-500"
-                        placeholder="usuario@hotel.com"
+                        placeholder="william@gmail.com"
                     />
                 </div>
 

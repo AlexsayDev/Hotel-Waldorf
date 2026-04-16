@@ -12,9 +12,9 @@ const PlaceholderModule = ({ title, description, icon: Icon }) => {
                     <p className="mt-1 text-slate-500">{description}</p>
                 </div>
             </div>
-            <div className="mt-8 rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6 text-sm text-slate-500">
+            {/**<div className="mt-8 rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6 text-sm text-slate-500">
                 Este módulo está preparado en el sidebar para desarrollarse en las siguientes fases del proyecto.
-            </div>
+            </div>  */}
         </div>
     )
 }

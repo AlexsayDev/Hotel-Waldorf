@@ -4,9 +4,9 @@ export const modules = [
     { key: 'usuarios', label: 'Usuarios', icon: Users, enabled: true },
     { key: 'habitaciones', label: 'Habitaciones', icon: BedDouble, enabled: true },
     { key: 'disponibilidad', label: 'Disponibilidad', icon: Search, enabled: true },
-    { key: 'reservas', label: 'Reservas', icon: CalendarDays, enabled: false },
+    { key: 'reservas', label: 'Reservas', icon: CalendarDays, enabled: true },
     { key: 'pagos', label: 'Pagos', icon: CreditCard, enabled: false },
-    { key: 'temporadas', label: 'Temporadas', icon: Tags, enabled: false },
+    //{ key: 'temporadas', label: 'Temporadas', icon: Tags, enabled: false },
     { key: 'reportes', label: 'Reportes', icon: BarChart3, enabled: false },
     { key: 'configuracion', label: 'Configuración', icon: Settings, enabled: false },
 ];
